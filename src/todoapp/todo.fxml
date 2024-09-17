@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="todoapp.ToDoController">
+    <TextField fx:id="taskInput" promptText="Enter your task here" />
+
+    <ListView fx:id="taskList" prefHeight="200" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Add Task" onAction="#handleAddTask" />
+        <Button text="Delete Task" onAction="#handleDeleteTask" />
+        <Button text="Mark as Done" onAction="#handleMarkAsDone" />
+    </HBox>
+</VBox>
